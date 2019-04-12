@@ -1,0 +1,1669 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Dashboard</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+	<link rel="stylesheet" href="style/main.css">
+  <meta name="theme-color" content="#fff">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon32x32.png">
+</head>
+<body>
+<div class="dashboard_content">
+ <aside class="nav col-sm-1 col-md-1 col-lg-1">
+ <div class="nav__inner">
+  <ul class="nav_listing">
+   <li class="listing_item avatar_item">
+    <div class="preview">
+     <img src="img/content/nav_avatar.png" width="96" height="96" alt="avatar icon">
+     <span class="number">
+      2
+     </span>
+     <span class="more">
+      &#8230
+     </span>
+    </div>
+   </li>
+   <li class="listing_item board_item active_listing_item clickable_listing_item">
+    <div class="preview">
+     <img src="img/content/Board_ICON.png" width="45" height="45" alt="board icon">
+     <span class="text">
+     Board
+     </span>
+      <span class="more">
+      &#8230
+     </span>
+    </div>
+   </li>
+   <li class="listing_item projects_item clickable_listing_item">
+     <div class="preview">
+      <img src="img/content/projects_icon.png" width="33" height="27" alt="projects icon">
+      <span class="text">
+       Projects
+      </span>
+      <span class="number">
+       9
+     </span>
+      <span class="more">
+       &#8230
+     </span>
+    </div>
+   </li>
+   <li class="listing_item settings_item clickable_listing_item">
+     <div class="preview">
+     <img src="img/content/settings_icon.png" width="42" height="42" alt="settings icon">
+     <span class="text">
+     Settings
+     </span>
+    </div>
+   </li>
+    <li class="listing_item upgrade_item clickable_listing_item">
+    <div class="preview">
+     <img src="img/content/upgrade_icon.png" width="44" height="46" alt="upgrade icon">
+     <span class="number">
+      3
+     </span>
+     <span class="text">
+      Upgrade
+     </span>
+      <span class="more">
+       &#8230
+     </span>
+    </div>
+   </li>
+    <li class="listing_item logout_item">
+    <div class="preview">
+     <img src="img/content/logout_icon.png" width="44" height="44" alt="logout icon">
+     <span class="text">
+     Logout
+     </span>
+    </div>
+   </li>
+  </ul>
+ </div>
+</aside>
+
+<div class="main">
+ <div class="container">
+ ﻿
+
+<div class="row">
+   <div class="col-12 header main__header align-items-center justify-content-between">
+    <div class="left_part">
+     <div class="header_item">
+      <div class="item_image">
+       <img src="img/content/refresh_icon.png" width="17" height="15" alt="refresh">
+      </div>
+      <div class="item_text">
+       <span>
+        Dashboard
+       </span>
+      </div>
+     </div>
+    </div>
+    <div class="right_part">
+     <div class="header_item">
+      <div class="item_image">
+       <i class="fa fa-angle-down">
+       </i>
+      </div>
+      <div class="dropdown">
+       <button class="btn btn-sm dropdown-toggle header-btn" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <i class="far fa-comments">
+        </i>
+        <span>
+        5 users online
+        </span>
+       </button>
+      <div class="dropdown-menu header-dropdowm-menu" aria-labelledby="dropdownMenuButton">
+       <a class="dropdown-item" href="#">Action</a>
+       <a class="dropdown-item" href="#">Another action</a>
+       <a class="dropdown-item" href="#">Something else here</a>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+
+  
+   <div class="main__tabs">
+   <div class="row">
+    <div class="tabs_item_container active_projects_tab">
+     <div class="tabs_item active_tab" id="active_projects">
+      <i class="far fa-clock item_image">
+      </i>
+      <span class="item_text">
+       Active Projects
+      </span>
+      <span class="item_number">
+       9
+      </span>
+     </div>
+      <div class="tabs_item messenger_tab">
+      <i class="fab fa-telegram-plane item_image">
+      </i>
+      <span class="item_text">
+       Messenger
+      </span>
+      <span class="item_number">
+       2
+      </span>
+     </div>
+    </div>
+    <div class="tabs_message">
+     <span class="editable_message" onkeypress="return this.innerText.length<=20" placeholder="Search Project, User, Task, etc..." contenteditable="true"></span>
+    </div>
+   </div>
+  </div>
+ </div>
+ ﻿<div class="widget animated fast">
+ <div class="container">
+  <div class="row align-items-start justify-content-around flex-nowrap">
+  
+   <div class="left_part">
+    <div class="left_part_entry">
+     <div class="pull-left">
+      <div class="entry_message">
+       <span class="editable_message" onkeypress="return this.innerText.length<=20" placeholder="Search a Project with Name, Task, User etc..." contenteditable="true"></span>
+      </div>
+     </div>
+     <div class="pull-right">
+      <div class="entry_dropdown">
+       <button class="btn btn-sm dropdown-toggle first-widget-btn" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+       <span>
+        <strong>New projects</strong> (descending)
+       </span>
+      </button>
+      <div class="dropdown-menu first-widget-dropdown-menu" aria-labelledby="dropdownMenuButton">
+       <a class="dropdown-item project_8">Project_1</a>
+       <a class="dropdown-item project_9">Project_2</a>
+       <a class="dropdown-item project_10">Project_3</a>
+      </div>
+     </div>
+     <div class="entry_image" id="add_project">
+      <i class="fas fa-plus">
+      </i>
+     </div>
+     </div>
+    </div>
+    
+    <div class="left_part_item_container">
+     
+    
+    <div class="first_item_block_wrapper">
+     <div class="container_item">
+      <span class="item_percentage">
+       23%
+      </span>
+      <span class="item_message">
+       Create Contact Formular
+      </span> 
+      <div class="item_text">
+       <span>
+        Worlda
+       </span>
+      </div>
+      <div class="item_search">
+       <i class="fas fa-search"></i>
+      </div>
+      <div class="item_dropdown">
+       <i class="fa fa-angle-down">
+       </i>
+      </div>
+     </div>
+
+    <div class="container_subitem animated fast">
+     <span class="subitem_percentage">
+      66%
+     </span>
+     <span class="subitem_message">
+      Create Contact Formular
+     </span> 
+     <div class="subitem_avatars">
+      <div class="avatars_item">
+       <img class="avatars_items_img" src="img/content/avatar_thumbnail.png" width="33" height="33" alt="avatar">
+       <span class="avatar_status active">
+       </span>
+      </div>
+      <div class="avatars_item">
+       <img class="avatars_items_img" src="img/content/avatar_thumbnail_2.png" width="33" height="33" alt="avatar">
+       <span class="avatar_status active">
+       </span>
+      </div>
+      <div class="avatars_item">
+       <img class="avatars_items_img" src="img/content/avatar_thumbnail_3.png" width="33" height="33" alt="avatar">
+       <span class="avatar_status">
+       </span>
+      </div>
+      <div class="avatars_item additional_item animated fast slideInLeft">
+       <img class="avatars_items_img" src="img/content/avatar_thumbnail.png" width="33" height="33" alt="avatar">
+       <span class="avatar_status">
+       </span>
+      </div>
+      <div class="avatars_item additional_item animated fast slideInLeft">
+       <img class="avatars_items_img" src="img/content/avatar_thumbnail.png" width="33" height="33" alt="avatar">
+       <span class="avatar_status active">
+       </span>
+      </div>
+      <div class="avatars_item additional_item animated fast slideInLeft">
+       <img class="avatars_items_img" src="img/content/avatar_thumbnail.png" width="33" height="33" alt="avatar">
+       <span class="avatar_status">
+       </span>
+      </div>
+       <div class="avatars_item additional_item animated fast slideInLeft">
+       <img class="avatars_items_img" src="img/content/avatar_thumbnail.png" width="33" height="33" alt="avatar">
+       <span class="avatar_status active">
+       </span>
+      </div>
+       <div class="avatars_item additional_item animated fast slideInLeft">
+       <img class="avatars_items_img" src="img/content/avatar_thumbnail.png" width="33" height="33" alt="avatar">
+       <span class="avatar_status">
+       </span>
+      </div>
+       <div class="avatars_item additional_item animated fast slideInLeft">
+       <img class="avatars_items_img" src="img/content/avatar_thumbnail.png" width="33" height="33" alt="avatar">
+       <span class="avatar_status">
+       </span>
+      </div>
+      <div class="more_avatars_item">
+       <span>
+        +3
+       </span>
+      </div>
+      </div>
+      <div class="subitem_text">
+       <i class="fa fa-redo">
+       </i>
+       <span>
+        Today, <strong>13:40</strong> PM
+       </span>
+      </div>
+      <div class="subitem_search">
+       <i class="fas fa-search"></i>
+      </div>
+     </div>
+
+     <div class="container_subitem done_subitem animated fast">
+     <span class="subitem_percentage done_percentage">
+      Ready
+     </span>
+     <span class="subitem_message">
+      <strong>Implementation in the Layout</strong>
+      <i class="fa fa-check">
+      </i>
+     </span> 
+     <div class="subitem_avatars">
+      <div class="avatars_item">
+       <img class="avatars_items_img" src="img/content/avatar_thumbnail.png" width="33" height="33" alt="avatar">
+       <span class="avatar_status active">
+       </span>
+      </div>
+       <div class="avatars_item">
+        <img class="avatars_items_img" src="img/content/avatar_thumbnail_2.png" width="33" height="33" alt="avatar">
+        <span class="avatar_status">
+        </span>
+       </div>
+      </div>
+      <div class="subitem_text">
+       <i class="fa fa-redo">
+       </i>
+       <span>
+        Yesterday, <strong>13:40</strong> PM
+       </span>
+      </div>
+      <div class="subitem_search">
+       <i class="fas fa-search"></i>
+      </div>
+     </div>
+    </div>
+  
+
+     <div class="second_item_block_wrapper">
+     <div class="container_item">
+      <span class="item_percentage">
+       87%
+      </span>
+      <span class="item_message">
+       Create Subpage PSD
+      </span> 
+      <div class="item_text">
+       <span>
+        Panorama
+       </span>
+      </div>
+      <div class="item_search">
+       <i class="fas fa-search"></i>
+      </div>
+      <div class="item_dropdown">
+       <i class="fa fa-angle-down">
+       </i>
+      </div>
+     </div>
+
+    <div class="container_subitem animated fast">
+     <span class="subitem_percentage">
+      66%
+     </span>
+     <span class="subitem_message">
+      Create Contact Formular
+     </span> 
+     <div class="subitem_avatars">
+      <div class="avatars_item">
+       <img class="avatars_items_img" src="img/content/avatar_thumbnail.png" width="33" height="33" alt="avatar">
+       <span class="avatar_status active">
+       </span>
+      </div>
+      <div class="avatars_item">
+       <img class="avatars_items_img" src="img/content/avatar_thumbnail_2.png" width="33" height="33" alt="avatar">
+       <span class="avatar_status active">
+       </span>
+      </div>
+      <div class="avatars_item">
+       <img class="avatars_items_img" src="img/content/avatar_thumbnail_3.png" width="33" height="33" alt="avatar">
+       <span class="avatar_status">
+       </span>
+      </div>
+      <div class="avatars_item additional_item animated fast slideInLeft">
+       <img class="avatars_items_img" src="img/content/avatar_thumbnail.png" width="33" height="33" alt="avatar">
+       <span class="avatar_status">
+       </span>
+      </div>
+      <div class="avatars_item additional_item animated fast slideInLeft">
+       <img class="avatars_items_img" src="img/content/avatar_thumbnail.png" width="33" height="33" alt="avatar">
+       <span class="avatar_status active">
+       </span>
+      </div>
+      <div class="avatars_item additional_item animated fast slideInLeft">
+       <img class="avatars_items_img" src="img/content/avatar_thumbnail.png" width="33" height="33" alt="avatar">
+       <span class="avatar_status">
+       </span>
+      </div>
+       <div class="avatars_item additional_item animated fast slideInLeft">
+       <img class="avatars_items_img" src="img/content/avatar_thumbnail.png" width="33" height="33" alt="avatar">
+       <span class="avatar_status active">
+       </span>
+      </div>
+       <div class="avatars_item additional_item animated fast slideInLeft">
+       <img class="avatars_items_img" src="img/content/avatar_thumbnail.png" width="33" height="33" alt="avatar">
+       <span class="avatar_status">
+       </span>
+      </div>
+       <div class="avatars_item additional_item animated fast slideInLeft">
+       <img class="avatars_items_img" src="img/content/avatar_thumbnail.png" width="33" height="33" alt="avatar">
+       <span class="avatar_status">
+       </span>
+      </div>
+      <div class="more_avatars_item">
+       <span>
+        +3
+       </span>
+      </div>
+      </div>
+      <div class="subitem_text">
+       <i class="fa fa-redo">
+       </i>
+       <span>
+        Today, <strong>13:40</strong> PM
+       </span>
+      </div>
+      <div class="subitem_search">
+       <i class="fas fa-search"></i>
+      </div>
+     </div>
+
+     <div class="container_subitem done_subitem animated fast">
+     <span class="subitem_percentage done_percentage">
+      Ready
+     </span>
+     <span class="subitem_message">
+      <strong>Implementation in the Layout</strong>
+      <i class="fa fa-check">
+      </i>
+     </span> 
+     <div class="subitem_avatars">
+      <div class="avatars_item">
+       <img class="avatars_items_img" src="img/content/avatar_thumbnail.png" width="33" height="33" alt="avatar">
+       <span class="avatar_status active">
+       </span>
+      </div>
+       <div class="avatars_item">
+        <img class="avatars_items_img" src="img/content/avatar_thumbnail_2.png" width="33" height="33" alt="avatar">
+        <span class="avatar_status">
+        </span>
+       </div>
+      </div>
+      <div class="subitem_text">
+       <i class="fa fa-redo">
+       </i>
+       <span>
+        Yesterday, <strong>13:40</strong> PM
+       </span>
+      </div>
+      <div class="subitem_search">
+       <i class="fas fa-search"></i>
+      </div>
+     </div>
+    </div> 
+    
+    
+     <div class="third_item_block_wrapper">
+     <div class="container_item">
+      <span class="item_percentage">
+       83%
+      </span>
+      <span class="item_message">
+       Layout & implementation in HTML & CSS   
+      </span> 
+      <div class="item_text">
+       <span>
+        Ebay Relaunch
+       </span>
+      </div>
+      <div class="item_search">
+       <i class="fas fa-search"></i>
+      </div>
+      <div class="item_dropdown">
+       <i class="fa fa-angle-down">
+       </i>
+      </div>
+     </div>
+
+    <div class="container_subitem animated fast">
+     <span class="subitem_percentage">
+      66%
+     </span>
+     <span class="subitem_message">
+      Create Contact Formular
+     </span> 
+     <div class="subitem_avatars">
+      <div class="avatars_item">
+       <img class="avatars_items_img" src="img/content/avatar_thumbnail.png" width="33" height="33" alt="avatar">
+       <span class="avatar_status active">
+       </span>
+      </div>
+      <div class="avatars_item">
+       <img class="avatars_items_img" src="img/content/avatar_thumbnail_2.png" width="33" height="33" alt="avatar">
+       <span class="avatar_status active">
+       </span>
+      </div>
+      <div class="avatars_item">
+       <img class="avatars_items_img" src="img/content/avatar_thumbnail_3.png" width="33" height="33" alt="avatar">
+       <span class="avatar_status">
+       </span>
+      </div>
+      <div class="avatars_item additional_item animated fast slideInLeft">
+       <img class="avatars_items_img" src="img/content/avatar_thumbnail.png" width="33" height="33" alt="avatar">
+       <span class="avatar_status">
+       </span>
+      </div>
+      <div class="avatars_item additional_item animated fast slideInLeft">
+       <img class="avatars_items_img" src="img/content/avatar_thumbnail.png" width="33" height="33" alt="avatar">
+       <span class="avatar_status active">
+       </span>
+      </div>
+      <div class="avatars_item additional_item animated fast slideInLeft">
+       <img class="avatars_items_img" src="img/content/avatar_thumbnail.png" width="33" height="33" alt="avatar">
+       <span class="avatar_status">
+       </span>
+      </div>
+       <div class="avatars_item additional_item animated fast slideInLeft">
+       <img class="avatars_items_img" src="img/content/avatar_thumbnail.png" width="33" height="33" alt="avatar">
+       <span class="avatar_status active">
+       </span>
+      </div>
+       <div class="avatars_item additional_item animated fast slideInLeft">
+       <img class="avatars_items_img" src="img/content/avatar_thumbnail.png" width="33" height="33" alt="avatar">
+       <span class="avatar_status">
+       </span>
+      </div>
+       <div class="avatars_item additional_item animated fast slideInLeft">
+       <img class="avatars_items_img" src="img/content/avatar_thumbnail.png" width="33" height="33" alt="avatar">
+       <span class="avatar_status">
+       </span>
+      </div>
+      <div class="more_avatars_item">
+       <span>
+        +3
+       </span>
+      </div>
+      </div>
+      <div class="subitem_text">
+       <i class="fa fa-redo">
+       </i>
+       <span>
+        Today, <strong>13:40</strong> PM
+       </span>
+      </div>
+      <div class="subitem_search">
+       <i class="fas fa-search"></i>
+      </div>
+     </div>
+
+     <div class="container_subitem done_subitem animated fast">
+     <span class="subitem_percentage done_percentage">
+      Ready
+     </span>
+     <span class="subitem_message">
+      <strong>Implementation in the Layout</strong>
+      <i class="fa fa-check">
+      </i>
+     </span> 
+     <div class="subitem_avatars">
+      <div class="avatars_item">
+       <img class="avatars_items_img" src="img/content/avatar_thumbnail.png" width="33" height="33" alt="avatar">
+       <span class="avatar_status active">
+       </span>
+      </div>
+       <div class="avatars_item">
+        <img class="avatars_items_img" src="img/content/avatar_thumbnail_2.png" width="33" height="33" alt="avatar">
+        <span class="avatar_status">
+        </span>
+       </div>
+      </div>
+      <div class="subitem_text">
+       <i class="fa fa-redo">
+       </i>
+       <span>
+        Yesterday, <strong>13:40</strong> PM
+       </span>
+      </div>
+      <div class="subitem_search">
+       <i class="fas fa-search"></i>
+      </div>
+     </div>
+    </div> 
+    
+    
+     <div class="fourth_item_block_wrapper">
+     <div class="container_item">
+      <span class="item_percentage">
+       23%
+      </span>
+      <span class="item_message">
+       Lorem ipsum dolor sit amet, elitr, sed diam  
+       nonumy eirmod tempor
+      </span> 
+      <div class="item_text">
+       <span>
+        Panorama
+       </span>
+      </div>
+      <div class="item_search">
+       <i class="fas fa-search"></i>
+      </div>
+      <div class="item_dropdown">
+       <i class="fa fa-angle-down">
+       </i>
+      </div>
+     </div>
+
+    <div class="container_subitem animated fast">
+     <span class="subitem_percentage">
+      66%
+     </span>
+     <span class="subitem_message">
+      Create Contact Formular
+     </span> 
+     <div class="subitem_avatars">
+      <div class="avatars_item">
+       <img class="avatars_items_img" src="img/content/avatar_thumbnail.png" width="33" height="33" alt="avatar">
+       <span class="avatar_status active">
+       </span>
+      </div>
+      <div class="avatars_item">
+       <img class="avatars_items_img" src="img/content/avatar_thumbnail_2.png" width="33" height="33" alt="avatar">
+       <span class="avatar_status active">
+       </span>
+      </div>
+      <div class="avatars_item">
+       <img class="avatars_items_img" src="img/content/avatar_thumbnail_3.png" width="33" height="33" alt="avatar">
+       <span class="avatar_status">
+       </span>
+      </div>
+      <div class="avatars_item additional_item animated fast slideInLeft">
+       <img class="avatars_items_img" src="img/content/avatar_thumbnail.png" width="33" height="33" alt="avatar">
+       <span class="avatar_status">
+       </span>
+      </div>
+      <div class="avatars_item additional_item animated fast slideInLeft">
+       <img class="avatars_items_img" src="img/content/avatar_thumbnail.png" width="33" height="33" alt="avatar">
+       <span class="avatar_status active">
+       </span>
+      </div>
+      <div class="avatars_item additional_item animated fast slideInLeft">
+       <img class="avatars_items_img" src="img/content/avatar_thumbnail.png" width="33" height="33" alt="avatar">
+       <span class="avatar_status">
+       </span>
+      </div>
+       <div class="avatars_item additional_item animated fast slideInLeft">
+       <img class="avatars_items_img" src="img/content/avatar_thumbnail.png" width="33" height="33" alt="avatar">
+       <span class="avatar_status active">
+       </span>
+      </div>
+       <div class="avatars_item additional_item animated fast slideInLeft">
+       <img class="avatars_items_img" src="img/content/avatar_thumbnail.png" width="33" height="33" alt="avatar">
+       <span class="avatar_status">
+       </span>
+      </div>
+       <div class="avatars_item additional_item animated fast slideInLeft">
+       <img class="avatars_items_img" src="img/content/avatar_thumbnail.png" width="33" height="33" alt="avatar">
+       <span class="avatar_status">
+       </span>
+      </div>
+      <div class="more_avatars_item">
+       <span>
+        +3
+       </span>
+      </div>
+      </div>
+      <div class="subitem_text">
+       <i class="fa fa-redo">
+       </i>
+       <span>
+        Today, <strong>13:40</strong> PM
+       </span>
+      </div>
+      <div class="subitem_search">
+       <i class="fas fa-search"></i>
+      </div>
+     </div>
+
+     <div class="container_subitem done_subitem animated fast">
+     <span class="subitem_percentage done_percentage">
+      Ready
+     </span>
+     <span class="subitem_message">
+      <strong>Implementation in the Layout</strong>
+      <i class="fa fa-check">
+      </i>
+     </span> 
+     <div class="subitem_avatars">
+      <div class="avatars_item">
+       <img class="avatars_items_img" src="img/content/avatar_thumbnail.png" width="33" height="33" alt="avatar">
+       <span class="avatar_status active">
+       </span>
+      </div>
+       <div class="avatars_item">
+        <img class="avatars_items_img" src="img/content/avatar_thumbnail_2.png" width="33" height="33" alt="avatar">
+        <span class="avatar_status">
+        </span>
+       </div>
+      </div>
+      <div class="subitem_text">
+       <i class="fa fa-redo">
+       </i>
+       <span>
+        Yesterday, <strong>13:40</strong> PM
+       </span>
+      </div>
+      <div class="subitem_search">
+       <i class="fas fa-search"></i>
+      </div>
+     </div>
+    </div> 
+    
+    
+    <div class="fifth_item_block_wrapper">
+     <div class="container_item">
+      <span class="item_percentage">
+       23%
+      </span>
+      <span class="item_message">
+       Create Contact Formular
+      </span> 
+      <div class="item_text">
+       <span>
+        Worlda
+       </span>
+      </div>
+      <div class="item_search">
+       <i class="fas fa-search"></i>
+      </div>
+      <div class="item_dropdown">
+       <i class="fa fa-angle-down">
+       </i>
+      </div>
+     </div>
+
+    <div class="container_subitem animated fast">
+     <span class="subitem_percentage">
+      66%
+     </span>
+     <span class="subitem_message">
+      Create Contact Formular
+     </span> 
+     <div class="subitem_avatars">
+      <div class="avatars_item">
+       <img class="avatars_items_img" src="img/content/avatar_thumbnail.png" width="33" height="33" alt="avatar">
+       <span class="avatar_status active">
+       </span>
+      </div>
+      <div class="avatars_item">
+       <img class="avatars_items_img" src="img/content/avatar_thumbnail_2.png" width="33" height="33" alt="avatar">
+       <span class="avatar_status active">
+       </span>
+      </div>
+      <div class="avatars_item">
+       <img class="avatars_items_img" src="img/content/avatar_thumbnail_3.png" width="33" height="33" alt="avatar">
+       <span class="avatar_status">
+       </span>
+      </div>
+      <div class="avatars_item additional_item animated fast slideInLeft">
+       <img class="avatars_items_img" src="img/content/avatar_thumbnail.png" width="33" height="33" alt="avatar">
+       <span class="avatar_status">
+       </span>
+      </div>
+      <div class="avatars_item additional_item animated fast slideInLeft">
+       <img class="avatars_items_img" src="img/content/avatar_thumbnail.png" width="33" height="33" alt="avatar">
+       <span class="avatar_status active">
+       </span>
+      </div>
+      <div class="avatars_item additional_item animated fast slideInLeft">
+       <img class="avatars_items_img" src="img/content/avatar_thumbnail.png" width="33" height="33" alt="avatar">
+       <span class="avatar_status">
+       </span>
+      </div>
+       <div class="avatars_item additional_item animated fast slideInLeft">
+       <img class="avatars_items_img" src="img/content/avatar_thumbnail.png" width="33" height="33" alt="avatar">
+       <span class="avatar_status active">
+       </span>
+      </div>
+       <div class="avatars_item additional_item animated fast slideInLeft">
+       <img class="avatars_items_img" src="img/content/avatar_thumbnail.png" width="33" height="33" alt="avatar">
+       <span class="avatar_status">
+       </span>
+      </div>
+       <div class="avatars_item additional_item animated fast slideInLeft">
+       <img class="avatars_items_img" src="img/content/avatar_thumbnail.png" width="33" height="33" alt="avatar">
+       <span class="avatar_status">
+       </span>
+      </div>
+      <div class="more_avatars_item">
+       <span>
+        +3
+       </span>
+      </div>
+      </div>
+      <div class="subitem_text">
+       <i class="fa fa-redo">
+       </i>
+       <span>
+        Today, <strong>13:40</strong> PM
+       </span>
+      </div>
+      <div class="subitem_search">
+       <i class="fas fa-search"></i>
+      </div>
+     </div>
+
+     <div class="container_subitem done_subitem animated fast">
+     <span class="subitem_percentage done_percentage">
+      Ready
+     </span>
+     <span class="subitem_message">
+      <strong>Implementation in the Layout</strong>
+      <i class="fa fa-check">
+      </i>
+     </span> 
+     <div class="subitem_avatars">
+      <div class="avatars_item">
+       <img class="avatars_items_img" src="img/content/avatar_thumbnail.png" width="33" height="33" alt="avatar">
+       <span class="avatar_status active">
+       </span>
+      </div>
+       <div class="avatars_item">
+        <img class="avatars_items_img" src="img/content/avatar_thumbnail_2.png" width="33" height="33" alt="avatar">
+        <span class="avatar_status">
+        </span>
+       </div>
+      </div>
+      <div class="subitem_text">
+       <i class="fa fa-redo">
+       </i>
+       <span>
+        Yesterday, <strong>13:40</strong> PM
+       </span>
+      </div>
+      <div class="subitem_search">
+       <i class="fas fa-search"></i>
+      </div>
+     </div>
+    </div>
+  
+  
+    <div class="sixth_item_block_wrapper">
+     <div class="container_item">
+      <span class="item_percentage">
+       23%
+      </span>
+      <span class="item_message">
+       Create Contact Formular
+      </span> 
+      <div class="item_text">
+       <span>
+        Worlda
+       </span>
+      </div>
+      <div class="item_search">
+       <i class="fas fa-search"></i>
+      </div>
+      <div class="item_dropdown">
+       <i class="fa fa-angle-down">
+       </i>
+      </div>
+     </div>
+
+    <div class="container_subitem animated fast">
+     <span class="subitem_percentage">
+      66%
+     </span>
+     <span class="subitem_message">
+      Create Contact Formular
+     </span> 
+     <div class="subitem_avatars">
+      <div class="avatars_item">
+       <img class="avatars_items_img" src="img/content/avatar_thumbnail.png" width="33" height="33" alt="avatar">
+       <span class="avatar_status active">
+       </span>
+      </div>
+      <div class="avatars_item">
+       <img class="avatars_items_img" src="img/content/avatar_thumbnail_2.png" width="33" height="33" alt="avatar">
+       <span class="avatar_status active">
+       </span>
+      </div>
+      <div class="avatars_item">
+       <img class="avatars_items_img" src="img/content/avatar_thumbnail_3.png" width="33" height="33" alt="avatar">
+       <span class="avatar_status">
+       </span>
+      </div>
+      <div class="avatars_item additional_item animated fast slideInLeft">
+       <img class="avatars_items_img" src="img/content/avatar_thumbnail.png" width="33" height="33" alt="avatar">
+       <span class="avatar_status">
+       </span>
+      </div>
+      <div class="avatars_item additional_item animated fast slideInLeft">
+       <img class="avatars_items_img" src="img/content/avatar_thumbnail.png" width="33" height="33" alt="avatar">
+       <span class="avatar_status active">
+       </span>
+      </div>
+      <div class="avatars_item additional_item animated fast slideInLeft">
+       <img class="avatars_items_img" src="img/content/avatar_thumbnail.png" width="33" height="33" alt="avatar">
+       <span class="avatar_status">
+       </span>
+      </div>
+       <div class="avatars_item additional_item animated fast slideInLeft">
+       <img class="avatars_items_img" src="img/content/avatar_thumbnail.png" width="33" height="33" alt="avatar">
+       <span class="avatar_status active">
+       </span>
+      </div>
+       <div class="avatars_item additional_item animated fast slideInLeft">
+       <img class="avatars_items_img" src="img/content/avatar_thumbnail.png" width="33" height="33" alt="avatar">
+       <span class="avatar_status">
+       </span>
+      </div>
+       <div class="avatars_item additional_item animated fast slideInLeft">
+       <img class="avatars_items_img" src="img/content/avatar_thumbnail.png" width="33" height="33" alt="avatar">
+       <span class="avatar_status">
+       </span>
+      </div>
+      <div class="more_avatars_item">
+       <span>
+        +3
+       </span>
+      </div>
+      </div>
+      <div class="subitem_text">
+       <i class="fa fa-redo">
+       </i>
+       <span>
+        Today, <strong>13:40</strong> PM
+       </span>
+      </div>
+      <div class="subitem_search">
+       <i class="fas fa-search"></i>
+      </div>
+     </div>
+
+     <div class="container_subitem done_subitem animated fast">
+     <span class="subitem_percentage done_percentage">
+      Ready
+     </span>
+     <span class="subitem_message">
+      <strong>Implementation in the Layout</strong>
+      <i class="fa fa-check">
+      </i>
+     </span> 
+     <div class="subitem_avatars">
+      <div class="avatars_item">
+       <img class="avatars_items_img" src="img/content/avatar_thumbnail.png" width="33" height="33" alt="avatar">
+       <span class="avatar_status active">
+       </span>
+      </div>
+       <div class="avatars_item">
+        <img class="avatars_items_img" src="img/content/avatar_thumbnail_2.png" width="33" height="33" alt="avatar">
+        <span class="avatar_status">
+        </span>
+       </div>
+      </div>
+      <div class="subitem_text">
+       <i class="fa fa-redo">
+       </i>
+       <span>
+        Yesterday, <strong>13:40</strong> PM
+       </span>
+      </div>
+      <div class="subitem_search">
+       <i class="fas fa-search"></i>
+      </div>
+     </div>
+    </div>
+  
+  
+    <div class="seventh_item_block_wrapper">
+     <div class="container_item">
+      <span class="item_percentage">
+       23%
+      </span>
+      <span class="item_message">
+       Create Contact Formular
+      </span> 
+      <div class="item_text">
+       <span>
+        Worlda
+       </span>
+      </div>
+      <div class="item_search">
+       <i class="fas fa-search"></i>
+      </div>
+      <div class="item_dropdown">
+       <i class="fa fa-angle-down">
+       </i>
+      </div>
+     </div>
+
+    <div class="container_subitem animated fast">
+     <span class="subitem_percentage">
+      66%
+     </span>
+     <span class="subitem_message">
+      Create Contact Formular
+     </span> 
+     <div class="subitem_avatars">
+      <div class="avatars_item">
+       <img class="avatars_items_img" src="img/content/avatar_thumbnail.png" width="33" height="33" alt="avatar">
+       <span class="avatar_status active">
+       </span>
+      </div>
+      <div class="avatars_item">
+       <img class="avatars_items_img" src="img/content/avatar_thumbnail_2.png" width="33" height="33" alt="avatar">
+       <span class="avatar_status active">
+       </span>
+      </div>
+      <div class="avatars_item">
+       <img class="avatars_items_img" src="img/content/avatar_thumbnail_3.png" width="33" height="33" alt="avatar">
+       <span class="avatar_status">
+       </span>
+      </div>
+      <div class="avatars_item additional_item animated fast slideInLeft">
+       <img class="avatars_items_img" src="img/content/avatar_thumbnail.png" width="33" height="33" alt="avatar">
+       <span class="avatar_status">
+       </span>
+      </div>
+      <div class="avatars_item additional_item animated fast slideInLeft">
+       <img class="avatars_items_img" src="img/content/avatar_thumbnail.png" width="33" height="33" alt="avatar">
+       <span class="avatar_status active">
+       </span>
+      </div>
+      <div class="avatars_item additional_item animated fast slideInLeft">
+       <img class="avatars_items_img" src="img/content/avatar_thumbnail.png" width="33" height="33" alt="avatar">
+       <span class="avatar_status">
+       </span>
+      </div>
+       <div class="avatars_item additional_item animated fast slideInLeft">
+       <img class="avatars_items_img" src="img/content/avatar_thumbnail.png" width="33" height="33" alt="avatar">
+       <span class="avatar_status active">
+       </span>
+      </div>
+       <div class="avatars_item additional_item animated fast slideInLeft">
+       <img class="avatars_items_img" src="img/content/avatar_thumbnail.png" width="33" height="33" alt="avatar">
+       <span class="avatar_status">
+       </span>
+      </div>
+       <div class="avatars_item additional_item animated fast slideInLeft">
+       <img class="avatars_items_img" src="img/content/avatar_thumbnail.png" width="33" height="33" alt="avatar">
+       <span class="avatar_status">
+       </span>
+      </div>
+      <div class="more_avatars_item">
+       <span>
+        +3
+       </span>
+      </div>
+      </div>
+      <div class="subitem_text">
+       <i class="fa fa-redo">
+       </i>
+       <span>
+        Today, <strong>13:40</strong> PM
+       </span>
+      </div>
+      <div class="subitem_search">
+       <i class="fas fa-search"></i>
+      </div>
+     </div>
+
+     <div class="container_subitem done_subitem animated fast">
+     <span class="subitem_percentage done_percentage">
+      Ready
+     </span>
+     <span class="subitem_message">
+      <strong>Implementation in the Layout</strong>
+      <i class="fa fa-check">
+      </i>
+     </span> 
+     <div class="subitem_avatars">
+      <div class="avatars_item">
+       <img class="avatars_items_img" src="img/content/avatar_thumbnail.png" width="33" height="33" alt="avatar">
+       <span class="avatar_status active">
+       </span>
+      </div>
+       <div class="avatars_item">
+        <img class="avatars_items_img" src="img/content/avatar_thumbnail_2.png" width="33" height="33" alt="avatar">
+        <span class="avatar_status">
+        </span>
+       </div>
+      </div>
+      <div class="subitem_text">
+       <i class="fa fa-redo">
+       </i>
+       <span>
+        Yesterday, <strong>13:40</strong> PM
+       </span>
+      </div>
+      <div class="subitem_search">
+       <i class="fas fa-search"></i>
+      </div>
+     </div>
+    </div>
+  
+  
+     <div class="eighth_item_block_wrapper" id="eighth_project">
+     <div class="container_item animated fast fadeInDown">
+      <span class="item_percentage">
+       87%
+      </span>
+      <span class="item_message">
+       Create Subpage PSD
+      </span> 
+      <div class="item_text">
+       <span>
+        Panorama
+       </span>
+      </div>
+      <div class="item_search">
+       <i class="fas fa-search"></i>
+      </div>
+      <div class="item_dropdown">
+       <i class="fa fa-angle-down">
+       </i>
+      </div>
+     </div>
+
+    <div class="container_subitem animated fast">
+     <span class="subitem_percentage">
+      66%
+     </span>
+     <span class="subitem_message">
+      Create Contact Formular
+     </span> 
+     <div class="subitem_avatars">
+      <div class="avatars_item">
+       <img class="avatars_items_img" src="img/content/avatar_thumbnail.png" width="33" height="33" alt="avatar">
+       <span class="avatar_status active">
+       </span>
+      </div>
+      <div class="avatars_item">
+       <img class="avatars_items_img" src="img/content/avatar_thumbnail_2.png" width="33" height="33" alt="avatar">
+       <span class="avatar_status active">
+       </span>
+      </div>
+      <div class="avatars_item">
+       <img class="avatars_items_img" src="img/content/avatar_thumbnail_3.png" width="33" height="33" alt="avatar">
+       <span class="avatar_status">
+       </span>
+      </div>
+      <div class="avatars_item additional_item animated fast slideInLeft">
+       <img class="avatars_items_img" src="img/content/avatar_thumbnail.png" width="33" height="33" alt="avatar">
+       <span class="avatar_status">
+       </span>
+      </div>
+      <div class="avatars_item additional_item animated fast slideInLeft">
+       <img class="avatars_items_img" src="img/content/avatar_thumbnail.png" width="33" height="33" alt="avatar">
+       <span class="avatar_status active">
+       </span>
+      </div>
+      <div class="avatars_item additional_item animated fast slideInLeft">
+       <img class="avatars_items_img" src="img/content/avatar_thumbnail.png" width="33" height="33" alt="avatar">
+       <span class="avatar_status">
+       </span>
+      </div>
+       <div class="avatars_item additional_item animated fast slideInLeft">
+       <img class="avatars_items_img" src="img/content/avatar_thumbnail.png" width="33" height="33" alt="avatar">
+       <span class="avatar_status active">
+       </span>
+      </div>
+       <div class="avatars_item additional_item animated fast slideInLeft">
+       <img class="avatars_items_img" src="img/content/avatar_thumbnail.png" width="33" height="33" alt="avatar">
+       <span class="avatar_status">
+       </span>
+      </div>
+       <div class="avatars_item additional_item animated fast slideInLeft">
+       <img class="avatars_items_img" src="img/content/avatar_thumbnail.png" width="33" height="33" alt="avatar">
+       <span class="avatar_status">
+       </span>
+      </div>
+      <div class="more_avatars_item">
+       <span>
+        +3
+       </span>
+      </div>
+      </div>
+      <div class="subitem_text">
+       <i class="fa fa-redo">
+       </i>
+       <span>
+        Today, <strong>13:40</strong> PM
+       </span>
+      </div>
+      <div class="subitem_search">
+       <i class="fas fa-search"></i>
+      </div>
+     </div>
+
+     <div class="container_subitem done_subitem animated fast">
+     <span class="subitem_percentage done_percentage">
+      Ready
+     </span>
+     <span class="subitem_message">
+      <strong>Implementation in the Layout</strong>
+      <i class="fa fa-check">
+      </i>
+     </span> 
+     <div class="subitem_avatars">
+      <div class="avatars_item">
+       <img class="avatars_items_img" src="img/content/avatar_thumbnail.png" width="33" height="33" alt="avatar">
+       <span class="avatar_status active">
+       </span>
+      </div>
+       <div class="avatars_item">
+        <img class="avatars_items_img" src="img/content/avatar_thumbnail_2.png" width="33" height="33" alt="avatar">
+        <span class="avatar_status">
+        </span>
+       </div>
+      </div>
+      <div class="subitem_text">
+       <i class="fa fa-redo">
+       </i>
+       <span>
+        Yesterday, <strong>13:40</strong> PM
+       </span>
+      </div>
+      <div class="subitem_search">
+       <i class="fas fa-search"></i>
+      </div>
+     </div>
+    </div> 
+    
+    
+     <div class="ninth_item_block_wrapper" id="ninth_project">
+     <div class="container_item animated fast fadeInDown">
+      <span class="item_percentage">
+       83%
+      </span>
+      <span class="item_message">
+       Layout & implementation in HTML & CSS   
+      </span> 
+      <div class="item_text">
+       <span>
+        Ebay Relaunch
+       </span>
+      </div>
+      <div class="item_search">
+       <i class="fas fa-search"></i>
+      </div>
+      <div class="item_dropdown">
+       <i class="fa fa-angle-down">
+       </i>
+      </div>
+     </div>
+
+    <div class="container_subitem animated fast">
+     <span class="subitem_percentage">
+      66%
+     </span>
+     <span class="subitem_message">
+      Create Contact Formular
+     </span> 
+     <div class="subitem_avatars">
+      <div class="avatars_item">
+       <img class="avatars_items_img" src="img/content/avatar_thumbnail.png" width="33" height="33" alt="avatar">
+       <span class="avatar_status active">
+       </span>
+      </div>
+      <div class="avatars_item">
+       <img class="avatars_items_img" src="img/content/avatar_thumbnail_2.png" width="33" height="33" alt="avatar">
+       <span class="avatar_status active">
+       </span>
+      </div>
+      <div class="avatars_item">
+       <img class="avatars_items_img" src="img/content/avatar_thumbnail_3.png" width="33" height="33" alt="avatar">
+       <span class="avatar_status">
+       </span>
+      </div>
+      <div class="avatars_item additional_item animated fast slideInLeft">
+       <img class="avatars_items_img" src="img/content/avatar_thumbnail.png" width="33" height="33" alt="avatar">
+       <span class="avatar_status">
+       </span>
+      </div>
+      <div class="avatars_item additional_item animated fast slideInLeft">
+       <img class="avatars_items_img" src="img/content/avatar_thumbnail.png" width="33" height="33" alt="avatar">
+       <span class="avatar_status active">
+       </span>
+      </div>
+      <div class="avatars_item additional_item animated fast slideInLeft">
+       <img class="avatars_items_img" src="img/content/avatar_thumbnail.png" width="33" height="33" alt="avatar">
+       <span class="avatar_status">
+       </span>
+      </div>
+       <div class="avatars_item additional_item animated fast slideInLeft">
+       <img class="avatars_items_img" src="img/content/avatar_thumbnail.png" width="33" height="33" alt="avatar">
+       <span class="avatar_status active">
+       </span>
+      </div>
+       <div class="avatars_item additional_item animated fast slideInLeft">
+       <img class="avatars_items_img" src="img/content/avatar_thumbnail.png" width="33" height="33" alt="avatar">
+       <span class="avatar_status">
+       </span>
+      </div>
+       <div class="avatars_item additional_item animated fast slideInLeft">
+       <img class="avatars_items_img" src="img/content/avatar_thumbnail.png" width="33" height="33" alt="avatar">
+       <span class="avatar_status">
+       </span>
+      </div>
+      <div class="more_avatars_item">
+       <span>
+        +3
+       </span>
+      </div>
+      </div>
+      <div class="subitem_text">
+       <i class="fa fa-redo">
+       </i>
+       <span>
+        Today, <strong>13:40</strong> PM
+       </span>
+      </div>
+      <div class="subitem_search">
+       <i class="fas fa-search"></i>
+      </div>
+     </div>
+
+     <div class="container_subitem done_subitem animated fast">
+     <span class="subitem_percentage done_percentage">
+      Ready
+     </span>
+     <span class="subitem_message">
+      <strong>Implementation in the Layout</strong>
+      <i class="fa fa-check">
+      </i>
+     </span> 
+     <div class="subitem_avatars">
+      <div class="avatars_item">
+       <img class="avatars_items_img" src="img/content/avatar_thumbnail.png" width="33" height="33" alt="avatar">
+       <span class="avatar_status active">
+       </span>
+      </div>
+       <div class="avatars_item">
+        <img class="avatars_items_img" src="img/content/avatar_thumbnail_2.png" width="33" height="33" alt="avatar">
+        <span class="avatar_status">
+        </span>
+       </div>
+      </div>
+      <div class="subitem_text">
+       <i class="fa fa-redo">
+       </i>
+       <span>
+        Yesterday, <strong>13:40</strong> PM
+       </span>
+      </div>
+      <div class="subitem_search">
+       <i class="fas fa-search"></i>
+      </div>
+     </div>
+    </div> 
+    
+    
+     <div class="tenth_item_block_wrapper" id="tenth_project">
+     <div class="container_item animated fast fadeInDown">
+      <span class="item_percentage">
+       23%
+      </span>
+      <span class="item_message">
+       Lorem ipsum dolor sit amet, elitr, sed diam  
+       nonumy eirmod tempor
+      </span> 
+      <div class="item_text">
+       <span>
+        Panorama
+       </span>
+      </div>
+      <div class="item_search">
+       <i class="fas fa-search"></i>
+      </div>
+      <div class="item_dropdown">
+       <i class="fa fa-angle-down">
+       </i>
+      </div>
+     </div>
+
+    <div class="container_subitem animated fast">
+     <span class="subitem_percentage">
+      66%
+     </span>
+     <span class="subitem_message">
+      Create Contact Formular
+     </span> 
+     <div class="subitem_avatars">
+      <div class="avatars_item">
+       <img class="avatars_items_img" src="img/content/avatar_thumbnail.png" width="33" height="33" alt="avatar">
+       <span class="avatar_status active">
+       </span>
+      </div>
+      <div class="avatars_item">
+       <img class="avatars_items_img" src="img/content/avatar_thumbnail_2.png" width="33" height="33" alt="avatar">
+       <span class="avatar_status active">
+       </span>
+      </div>
+      <div class="avatars_item">
+       <img class="avatars_items_img" src="img/content/avatar_thumbnail_3.png" width="33" height="33" alt="avatar">
+       <span class="avatar_status">
+       </span>
+      </div>
+      <div class="avatars_item additional_item animated fast slideInLeft">
+       <img class="avatars_items_img" src="img/content/avatar_thumbnail.png" width="33" height="33" alt="avatar">
+       <span class="avatar_status">
+       </span>
+      </div>
+      <div class="avatars_item additional_item animated fast slideInLeft">
+       <img class="avatars_items_img" src="img/content/avatar_thumbnail.png" width="33" height="33" alt="avatar">
+       <span class="avatar_status active">
+       </span>
+      </div>
+      <div class="avatars_item additional_item animated fast slideInLeft">
+       <img class="avatars_items_img" src="img/content/avatar_thumbnail.png" width="33" height="33" alt="avatar">
+       <span class="avatar_status">
+       </span>
+      </div>
+       <div class="avatars_item additional_item animated fast slideInLeft">
+       <img class="avatars_items_img" src="img/content/avatar_thumbnail.png" width="33" height="33" alt="avatar">
+       <span class="avatar_status active">
+       </span>
+      </div>
+       <div class="avatars_item additional_item animated fast slideInLeft">
+       <img class="avatars_items_img" src="img/content/avatar_thumbnail.png" width="33" height="33" alt="avatar">
+       <span class="avatar_status">
+       </span>
+      </div>
+       <div class="avatars_item additional_item animated fast slideInLeft">
+       <img class="avatars_items_img" src="img/content/avatar_thumbnail.png" width="33" height="33" alt="avatar">
+       <span class="avatar_status">
+       </span>
+      </div>
+      <div class="more_avatars_item">
+       <span>
+        +3
+       </span>
+      </div>
+      </div>
+      <div class="subitem_text">
+       <i class="fa fa-redo">
+       </i>
+       <span>
+        Today, <strong>13:40</strong> PM
+       </span>
+      </div>
+      <div class="subitem_search">
+       <i class="fas fa-search"></i>
+      </div>
+     </div>
+
+     <div class="container_subitem done_subitem animated fast">
+     <span class="subitem_percentage done_percentage">
+      Ready
+     </span>
+     <span class="subitem_message">
+      <strong>Implementation in the Layout</strong>
+      <i class="fa fa-check">
+      </i>
+     </span> 
+     <div class="subitem_avatars">
+      <div class="avatars_item">
+       <img class="avatars_items_img" src="img/content/avatar_thumbnail.png" width="33" height="33" alt="avatar">
+       <span class="avatar_status active">
+       </span>
+      </div>
+       <div class="avatars_item">
+        <img class="avatars_items_img" src="img/content/avatar_thumbnail_2.png" width="33" height="33" alt="avatar">
+        <span class="avatar_status">
+        </span>
+       </div>
+      </div>
+      <div class="subitem_text">
+       <i class="fa fa-redo">
+       </i>
+       <span>
+        Yesterday, <strong>13:40</strong> PM
+       </span>
+      </div>
+      <div class="subitem_search">
+       <i class="fas fa-search"></i>
+      </div>
+     </div>
+    </div> 
+    
+     
+     </div>
+    
+    <div class="left_part_footer">
+     <span class="footer_message">
+      Project Archiv
+     </span>
+    </div>
+   </div>
+   
+   ﻿<div class="right_part">
+ <div class="right_part_item_container">
+  <div class="container_item">
+   <div class="item_image">
+    <img class="item_img" src="img/content/avatar_thumbnail_big_1.png" width="41" height="41" alt="avatar_big">
+     <span class="avatar_status active">
+     </span>
+   </div>
+   <div class="item_message">
+    <span class="message_text">
+    <strong>Mark P.</strong> add an Image into Worlda
+    </span>
+    <span class="message_text date_text">
+     Today, 10:30 PM
+    </span>
+   </div>
+  </div>
+   <div class="container_item">
+   <div class="item_image">
+    <img class="item_img" src="img/content/avatar_thumbnail_big_2.png" width="41" height="41" alt="avatar_big">
+     <span class="avatar_status active">
+     </span>
+   </div>
+   <div class="item_message">
+    <span class="message_text">
+    <strong>Mark P.</strong> add an Image into Worlda
+    </span>
+    <span class="message_text date_text">
+     Today, 10:30 PM
+    </span>
+   </div>
+  </div>
+   <div class="container_item">
+   <div class="item_image">
+    <img class="item_img" src="img/content/avatar_thumbnail_big_3.png" width="41" height="41" alt="avatar_big">
+     <span class="avatar_status">
+     </span>
+   </div>
+   <div class="item_message">
+    <span class="message_text">
+    <strong>Mark P.</strong> add an Image into Worlda
+    </span>
+    <span class="message_text date_text">
+     Today, 10:30 PM
+    </span>
+   </div>
+  </div>
+   <div class="container_item">
+   <div class="item_image">
+    <img class="item_img" src="img/content/avatar_thumbnail_big_1.png" width="41" height="41" alt="avatar_big">
+     <span class="avatar_status active">
+     </span>
+   </div>
+   <div class="item_message">
+    <span class="message_text">
+    <strong>Mark P.</strong> add an Image into Worlda
+    </span>
+    <span class="message_text date_text">
+     Today, 10:30 PM
+    </span>
+   </div>
+  </div>
+   <div class="container_item">
+   <div class="item_image">
+    <img class="item_img" src="img/content/avatar_thumbnail_big_4.png" width="41" height="41" alt="avatar_big">
+     <span class="avatar_status active">
+     </span>
+   </div>
+   <div class="item_message">
+    <span class="message_text">
+    <strong>Mark P.</strong> add an Image into Worlda
+    </span>
+    <span class="message_text date_text">
+     Today, 10:30 PM
+    </span>
+   </div>
+  </div>
+   <div class="container_item">
+   <div class="item_image">
+    <img class="item_img" src="img/content/avatar_thumbnail_big_1.png" width="41" height="41" alt="avatar_big">
+     <span class="avatar_status active">
+     </span>
+   </div>
+   <div class="item_message">
+    <span class="message_text">
+    <strong>Mark P.</strong> add an Image into Worlda
+    </span>
+    <span class="message_text date_text">
+     Today, 10:30 PM
+    </span>
+   </div>
+  </div>
+   <div class="container_item">
+   <div class="item_image">
+    <img class="item_img" src="img/content/avatar_thumbnail_big_5.png" width="41" height="41" alt="avatar_big">
+     <span class="avatar_status active">
+     </span>
+   </div>
+   <div class="item_message">
+    <span class="message_text">
+    <strong>Mark P.</strong> add an Image into Worlda
+    </span>
+    <span class="message_text date_text">
+     Today, 10:30 PM
+    </span>
+   </div>
+  </div>
+   <div class="container_item">
+   <div class="item_image">
+    <img class="item_img" src="img/content/avatar_thumbnail_big_5.png" width="41" height="41" alt="avatar_big">
+     <span class="avatar_status active">
+     </span>
+   </div>
+   <div class="item_message">
+    <span class="message_text">
+    <strong>Mark P.</strong> add an Image into Worlda
+    </span>
+    <span class="message_text date_text">
+     Today, 10:30 PM
+    </span>
+   </div>
+  </div>
+   <div class="container_item">
+   <div class="item_image">
+    <img class="item_img" src="img/content/avatar_thumbnail_big_1.png" width="41" height="41" alt="avatar_big">
+     <span class="avatar_status active">
+     </span>
+   </div>
+   <div class="item_message">
+    <span class="message_text">
+    <strong>Mark P.</strong> add an Image into Worlda
+    </span>
+    <span class="message_text date_text">
+     Today, 10:30 PM
+    </span>
+   </div>
+  </div>
+   <div class="container_item">
+   <div class="item_image">
+    <img class="item_img" src="img/content/avatar_thumbnail_big_5.png" width="41" height="41" alt="avatar_big">
+     <span class="avatar_status active">
+     </span>
+   </div>
+   <div class="item_message">
+    <span class="message_text">
+    <strong>Mark P.</strong> add an Image into Worlda
+    </span>
+    <span class="message_text date_text">
+     Today, 10:30 PM
+    </span>
+   </div>
+  </div>
+ </div> 
+ <div class="right_part_footer">
+  <span class="footer_message">
+    Activity Archiv
+  </span>
+ </div>
+</div>
+  </div>
+ </div>
+</div>
+ ﻿<div class="messenger_widget animated fast">
+ <div class="container">
+  <div class="row">
+   <p class="messenger_message">
+    Mesenger is still in progress
+   </p>
+  </div>
+ </div>
+</div>
+ </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

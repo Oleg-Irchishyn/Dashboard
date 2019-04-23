@@ -6,16 +6,14 @@
 	<title>Dashboard</title>
 	<meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="format-detection" content="telephone=no">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <link rel="stylesheet" href="../vendor/animate.min.css">
 	<link rel="stylesheet" href="style/main.css">
   <meta name="theme-color" content="#fff">
   <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon32x32.png">
 </head>
 <body>
 <div class="dashboard_content">
- <aside class="nav col-sm-1 col-md-1 col-lg-1">
+ <aside class="nav">
  <div class="nav__inner">
   <ul class="nav_listing">
    <li class="listing_item avatar_item">
@@ -92,8 +90,7 @@
  <div class="container">
  ﻿
 
-<div class="row">
-   <div class="col-12 header main__header align-items-center justify-content-between">
+   <div class="header main__header">
     <div class="left_part">
      <div class="header_item">
       <div class="item_image">
@@ -109,35 +106,33 @@
     <div class="right_part">
      <div class="header_item">
       <div class="item_image">
-       <i class="fa fa-angle-down">
-       </i>
+       <img src="img/ui/dropdown_arrow_white.png" width="10" height="6" alt="dropdown">
       </div>
+
       <div class="dropdown">
-       <button class="btn btn-sm dropdown-toggle header-btn" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        <i class="far fa-comments">
-        </i>
+       <button class="btn btn-sm dropdown-toggle header-btn" type="button">
+        <img src="img/ui/messages_icon.png" width="18" height="18" alt="comments">
         <span>
         5 users online
         </span>
        </button>
-      <div class="dropdown-menu header-dropdowm-menu" aria-labelledby="dropdownMenuButton">
-       <a class="dropdown-item" href="#">Action</a>
-       <a class="dropdown-item" href="#">Another action</a>
-       <a class="dropdown-item" href="#">Something else here</a>
+      <div class="dropdown-menu header-dropdowm-menu">
+       <a class="dropdown-item">Action</a>
+       <a class="dropdown-item">Another action</a>
+       <a class="dropdown-item">Something else here</a>
        </div>
       </div>
+
      </div>
     </div>
    </div>
-  </div>
 
   
    <div class="main__tabs">
-   <div class="row">
+   <div class="main__tabs__inner">
     <div class="tabs_item_container active_projects_tab">
      <div class="tabs_item active_tab" id="active_projects">
-      <i class="far fa-clock item_image">
-      </i>
+      <img class="item_image" src="img/content/clock_icon.png" width="40" height="40" alt="clock_icon">
       <span class="item_text">
        Active Projects
       </span>
@@ -146,8 +141,7 @@
       </span>
      </div>
       <div class="tabs_item messenger_tab">
-      <i class="fab fa-telegram-plane item_image">
-      </i>
+     <img class="item_image" src="img/content/telegram_icon.png" width="45" height="27" alt="telegram_icon">
       <span class="item_text">
        Messenger
       </span>
@@ -164,7 +158,7 @@
  </div>
  ﻿<div class="widget animated fast">
  <div class="container">
-  <div class="row align-items-start justify-content-around flex-nowrap">
+  <div class="widget__inner">
   
    <div class="left_part">
     <div class="left_part_entry">
@@ -175,20 +169,19 @@
      </div>
      <div class="pull-right">
       <div class="entry_dropdown">
-       <button class="btn btn-sm dropdown-toggle first-widget-btn" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+       <button class="btn btn-sm dropdown-toggle first-widget-btn" type="button">
        <span>
         <strong>New projects</strong> (descending)
        </span>
       </button>
-      <div class="dropdown-menu first-widget-dropdown-menu" aria-labelledby="dropdownMenuButton">
+      <div class="dropdown-menu first-widget-dropdown-menu">
        <a class="dropdown-item project_8">Project_1</a>
        <a class="dropdown-item project_9">Project_2</a>
        <a class="dropdown-item project_10">Project_3</a>
       </div>
      </div>
      <div class="entry_image" id="add_project">
-      <i class="fas fa-plus">
-      </i>
+      <img class="item_image" src="img/ui/plus_icon.png" width="11" height="11" alt="plus_icon">
      </div>
      </div>
     </div>
@@ -210,11 +203,10 @@
        </span>
       </div>
       <div class="item_search">
-       <i class="fas fa-search"></i>
+       <img class="item_image" src="img/ui/zoom_icon.png" width="12" height="12" alt="search_icon">
       </div>
       <div class="item_dropdown">
-       <i class="fa fa-angle-down">
-       </i>
+       <img class="item_image" src="img/ui/dropdown_arrow.png" width="10" height="6" alt="dropdown_icon">
       </div>
      </div>
 
@@ -278,14 +270,13 @@
       </div>
       </div>
       <div class="subitem_text">
-       <i class="fa fa-redo">
-       </i>
+       <img src="img/ui/refresh_icon.png" width="12" height="13" alt="refresh">
        <span>
         Today, <strong>13:40</strong> PM
        </span>
       </div>
       <div class="subitem_search">
-       <i class="fas fa-search"></i>
+       <img class="item_image" src="img/ui/zoom_icon.png" width="12" height="12" alt="search_icon">
       </div>
      </div>
 
@@ -295,8 +286,7 @@
      </span>
      <span class="subitem_message">
       <strong>Implementation in the Layout</strong>
-      <i class="fa fa-check">
-      </i>
+       <img src="img/ui/checked_icon.png" width="18" height="15" alt="checked">
      </span> 
      <div class="subitem_avatars">
       <div class="avatars_item">
@@ -311,14 +301,13 @@
        </div>
       </div>
       <div class="subitem_text">
-       <i class="fa fa-redo">
-       </i>
+       <img src="img/ui/refresh_icon.png" width="12" height="13" alt="refresh">
        <span>
         Yesterday, <strong>13:40</strong> PM
        </span>
       </div>
       <div class="subitem_search">
-       <i class="fas fa-search"></i>
+       <img class="item_image" src="img/ui/zoom_icon.png" width="12" height="12" alt="search_icon">
       </div>
      </div>
     </div>
@@ -337,16 +326,15 @@
         Panorama
        </span>
       </div>
-      <div class="item_search">
-       <i class="fas fa-search"></i>
+     <div class="item_search">
+       <img class="item_image" src="img/ui/zoom_icon.png" width="12" height="12" alt="search_icon">
       </div>
       <div class="item_dropdown">
-       <i class="fa fa-angle-down">
-       </i>
+       <img class="item_image" src="img/ui/dropdown_arrow.png" width="10" height="6" alt="dropdown_icon">
       </div>
      </div>
 
-    <div class="container_subitem animated fast">
+   <div class="container_subitem animated fast">
      <span class="subitem_percentage">
       66%
      </span>
@@ -406,14 +394,13 @@
       </div>
       </div>
       <div class="subitem_text">
-       <i class="fa fa-redo">
-       </i>
+       <img src="img/ui/refresh_icon.png" width="12" height="13" alt="refresh">
        <span>
         Today, <strong>13:40</strong> PM
        </span>
       </div>
       <div class="subitem_search">
-       <i class="fas fa-search"></i>
+       <img class="item_image" src="img/ui/zoom_icon.png" width="12" height="12" alt="search_icon">
       </div>
      </div>
 
@@ -423,8 +410,7 @@
      </span>
      <span class="subitem_message">
       <strong>Implementation in the Layout</strong>
-      <i class="fa fa-check">
-      </i>
+       <img src="img/ui/checked_icon.png" width="18" height="15" alt="checked">
      </span> 
      <div class="subitem_avatars">
       <div class="avatars_item">
@@ -439,14 +425,13 @@
        </div>
       </div>
       <div class="subitem_text">
-       <i class="fa fa-redo">
-       </i>
+       <img src="img/ui/refresh_icon.png" width="12" height="13" alt="refresh">
        <span>
         Yesterday, <strong>13:40</strong> PM
        </span>
       </div>
       <div class="subitem_search">
-       <i class="fas fa-search"></i>
+       <img class="item_image" src="img/ui/zoom_icon.png" width="12" height="12" alt="search_icon">
       </div>
      </div>
     </div> 
@@ -466,11 +451,10 @@
        </span>
       </div>
       <div class="item_search">
-       <i class="fas fa-search"></i>
+       <img class="item_image" src="img/ui/zoom_icon.png" width="12" height="12" alt="search_icon">
       </div>
       <div class="item_dropdown">
-       <i class="fa fa-angle-down">
-       </i>
+       <img class="item_image" src="img/ui/dropdown_arrow.png" width="10" height="6" alt="dropdown_icon">
       </div>
      </div>
 
@@ -534,14 +518,13 @@
       </div>
       </div>
       <div class="subitem_text">
-       <i class="fa fa-redo">
-       </i>
+       <img src="img/ui/refresh_icon.png" width="12" height="13" alt="refresh">
        <span>
         Today, <strong>13:40</strong> PM
        </span>
       </div>
       <div class="subitem_search">
-       <i class="fas fa-search"></i>
+       <img class="item_image" src="img/ui/zoom_icon.png" width="12" height="12" alt="search_icon">
       </div>
      </div>
 
@@ -551,8 +534,7 @@
      </span>
      <span class="subitem_message">
       <strong>Implementation in the Layout</strong>
-      <i class="fa fa-check">
-      </i>
+       <img src="img/ui/checked_icon.png" width="18" height="15" alt="checked">
      </span> 
      <div class="subitem_avatars">
       <div class="avatars_item">
@@ -567,14 +549,13 @@
        </div>
       </div>
       <div class="subitem_text">
-       <i class="fa fa-redo">
-       </i>
+       <img src="img/ui/refresh_icon.png" width="12" height="13" alt="refresh">
        <span>
         Yesterday, <strong>13:40</strong> PM
        </span>
       </div>
       <div class="subitem_search">
-       <i class="fas fa-search"></i>
+       <img class="item_image" src="img/ui/zoom_icon.png" width="12" height="12" alt="search_icon">
       </div>
      </div>
     </div> 
@@ -594,16 +575,15 @@
         Panorama
        </span>
       </div>
-      <div class="item_search">
-       <i class="fas fa-search"></i>
+     <div class="item_search">
+       <img class="item_image" src="img/ui/zoom_icon.png" width="12" height="12" alt="search_icon">
       </div>
       <div class="item_dropdown">
-       <i class="fa fa-angle-down">
-       </i>
+       <img class="item_image" src="img/ui/dropdown_arrow.png" width="10" height="6" alt="dropdown_icon">
       </div>
      </div>
 
-    <div class="container_subitem animated fast">
+   <div class="container_subitem animated fast">
      <span class="subitem_percentage">
       66%
      </span>
@@ -663,14 +643,13 @@
       </div>
       </div>
       <div class="subitem_text">
-       <i class="fa fa-redo">
-       </i>
+       <img src="img/ui/refresh_icon.png" width="12" height="13" alt="refresh">
        <span>
         Today, <strong>13:40</strong> PM
        </span>
       </div>
       <div class="subitem_search">
-       <i class="fas fa-search"></i>
+       <img class="item_image" src="img/ui/zoom_icon.png" width="12" height="12" alt="search_icon">
       </div>
      </div>
 
@@ -680,8 +659,7 @@
      </span>
      <span class="subitem_message">
       <strong>Implementation in the Layout</strong>
-      <i class="fa fa-check">
-      </i>
+       <img src="img/ui/checked_icon.png" width="18" height="15" alt="checked">
      </span> 
      <div class="subitem_avatars">
       <div class="avatars_item">
@@ -696,14 +674,13 @@
        </div>
       </div>
       <div class="subitem_text">
-       <i class="fa fa-redo">
-       </i>
+       <img src="img/ui/refresh_icon.png" width="12" height="13" alt="refresh">
        <span>
         Yesterday, <strong>13:40</strong> PM
        </span>
       </div>
       <div class="subitem_search">
-       <i class="fas fa-search"></i>
+       <img class="item_image" src="img/ui/zoom_icon.png" width="12" height="12" alt="search_icon">
       </div>
      </div>
     </div> 
@@ -723,15 +700,14 @@
        </span>
       </div>
       <div class="item_search">
-       <i class="fas fa-search"></i>
+       <img class="item_image" src="img/ui/zoom_icon.png" width="12" height="12" alt="search_icon">
       </div>
       <div class="item_dropdown">
-       <i class="fa fa-angle-down">
-       </i>
+       <img class="item_image" src="img/ui/dropdown_arrow.png" width="10" height="6" alt="dropdown_icon">
       </div>
      </div>
 
-    <div class="container_subitem animated fast">
+  <div class="container_subitem animated fast">
      <span class="subitem_percentage">
       66%
      </span>
@@ -791,14 +767,13 @@
       </div>
       </div>
       <div class="subitem_text">
-       <i class="fa fa-redo">
-       </i>
+       <img src="img/ui/refresh_icon.png" width="12" height="13" alt="refresh">
        <span>
         Today, <strong>13:40</strong> PM
        </span>
       </div>
       <div class="subitem_search">
-       <i class="fas fa-search"></i>
+       <img class="item_image" src="img/ui/zoom_icon.png" width="12" height="12" alt="search_icon">
       </div>
      </div>
 
@@ -808,8 +783,7 @@
      </span>
      <span class="subitem_message">
       <strong>Implementation in the Layout</strong>
-      <i class="fa fa-check">
-      </i>
+       <img src="img/ui/checked_icon.png" width="18" height="15" alt="checked">
      </span> 
      <div class="subitem_avatars">
       <div class="avatars_item">
@@ -824,14 +798,13 @@
        </div>
       </div>
       <div class="subitem_text">
-       <i class="fa fa-redo">
-       </i>
+       <img src="img/ui/refresh_icon.png" width="12" height="13" alt="refresh">
        <span>
         Yesterday, <strong>13:40</strong> PM
        </span>
       </div>
       <div class="subitem_search">
-       <i class="fas fa-search"></i>
+       <img class="item_image" src="img/ui/zoom_icon.png" width="12" height="12" alt="search_icon">
       </div>
      </div>
     </div>
@@ -850,16 +823,15 @@
         Worlda
        </span>
       </div>
-      <div class="item_search">
-       <i class="fas fa-search"></i>
+     <div class="item_search">
+       <img class="item_image" src="img/ui/zoom_icon.png" width="12" height="12" alt="search_icon">
       </div>
       <div class="item_dropdown">
-       <i class="fa fa-angle-down">
-       </i>
+       <img class="item_image" src="img/ui/dropdown_arrow.png" width="10" height="6" alt="dropdown_icon">
       </div>
      </div>
 
-    <div class="container_subitem animated fast">
+   <div class="container_subitem animated fast">
      <span class="subitem_percentage">
       66%
      </span>
@@ -919,14 +891,13 @@
       </div>
       </div>
       <div class="subitem_text">
-       <i class="fa fa-redo">
-       </i>
+       <img src="img/ui/refresh_icon.png" width="12" height="13" alt="refresh">
        <span>
         Today, <strong>13:40</strong> PM
        </span>
       </div>
       <div class="subitem_search">
-       <i class="fas fa-search"></i>
+       <img class="item_image" src="img/ui/zoom_icon.png" width="12" height="12" alt="search_icon">
       </div>
      </div>
 
@@ -936,8 +907,7 @@
      </span>
      <span class="subitem_message">
       <strong>Implementation in the Layout</strong>
-      <i class="fa fa-check">
-      </i>
+       <img src="img/ui/checked_icon.png" width="18" height="15" alt="checked">
      </span> 
      <div class="subitem_avatars">
       <div class="avatars_item">
@@ -952,14 +922,13 @@
        </div>
       </div>
       <div class="subitem_text">
-       <i class="fa fa-redo">
-       </i>
+       <img src="img/ui/refresh_icon.png" width="12" height="13" alt="refresh">
        <span>
         Yesterday, <strong>13:40</strong> PM
        </span>
       </div>
       <div class="subitem_search">
-       <i class="fas fa-search"></i>
+       <img class="item_image" src="img/ui/zoom_icon.png" width="12" height="12" alt="search_icon">
       </div>
      </div>
     </div>
@@ -979,15 +948,14 @@
        </span>
       </div>
       <div class="item_search">
-       <i class="fas fa-search"></i>
+       <img class="item_image" src="img/ui/zoom_icon.png" width="12" height="12" alt="search_icon">
       </div>
       <div class="item_dropdown">
-       <i class="fa fa-angle-down">
-       </i>
+       <img class="item_image" src="img/ui/dropdown_arrow.png" width="10" height="6" alt="dropdown_icon">
       </div>
      </div>
 
-    <div class="container_subitem animated fast">
+   <div class="container_subitem animated fast">
      <span class="subitem_percentage">
       66%
      </span>
@@ -1047,14 +1015,13 @@
       </div>
       </div>
       <div class="subitem_text">
-       <i class="fa fa-redo">
-       </i>
+       <img src="img/ui/refresh_icon.png" width="12" height="13" alt="refresh">
        <span>
         Today, <strong>13:40</strong> PM
        </span>
       </div>
       <div class="subitem_search">
-       <i class="fas fa-search"></i>
+       <img class="item_image" src="img/ui/zoom_icon.png" width="12" height="12" alt="search_icon">
       </div>
      </div>
 
@@ -1064,8 +1031,7 @@
      </span>
      <span class="subitem_message">
       <strong>Implementation in the Layout</strong>
-      <i class="fa fa-check">
-      </i>
+       <img src="img/ui/checked_icon.png" width="18" height="15" alt="checked">
      </span> 
      <div class="subitem_avatars">
       <div class="avatars_item">
@@ -1080,14 +1046,13 @@
        </div>
       </div>
       <div class="subitem_text">
-       <i class="fa fa-redo">
-       </i>
+       <img src="img/ui/refresh_icon.png" width="12" height="13" alt="refresh">
        <span>
         Yesterday, <strong>13:40</strong> PM
        </span>
       </div>
       <div class="subitem_search">
-       <i class="fas fa-search"></i>
+       <img class="item_image" src="img/ui/zoom_icon.png" width="12" height="12" alt="search_icon">
       </div>
      </div>
     </div>
@@ -1107,15 +1072,14 @@
        </span>
       </div>
       <div class="item_search">
-       <i class="fas fa-search"></i>
+       <img class="item_image" src="img/ui/zoom_icon.png" width="12" height="12" alt="search_icon">
       </div>
       <div class="item_dropdown">
-       <i class="fa fa-angle-down">
-       </i>
+       <img class="item_image" src="img/ui/dropdown_arrow.png" width="10" height="6" alt="dropdown_icon">
       </div>
      </div>
 
-    <div class="container_subitem animated fast">
+  <div class="container_subitem animated fast">
      <span class="subitem_percentage">
       66%
      </span>
@@ -1175,14 +1139,13 @@
       </div>
       </div>
       <div class="subitem_text">
-       <i class="fa fa-redo">
-       </i>
+       <img src="img/ui/refresh_icon.png" width="12" height="13" alt="refresh">
        <span>
         Today, <strong>13:40</strong> PM
        </span>
       </div>
       <div class="subitem_search">
-       <i class="fas fa-search"></i>
+       <img class="item_image" src="img/ui/zoom_icon.png" width="12" height="12" alt="search_icon">
       </div>
      </div>
 
@@ -1192,8 +1155,7 @@
      </span>
      <span class="subitem_message">
       <strong>Implementation in the Layout</strong>
-      <i class="fa fa-check">
-      </i>
+       <img src="img/ui/checked_icon.png" width="18" height="15" alt="checked">
      </span> 
      <div class="subitem_avatars">
       <div class="avatars_item">
@@ -1208,14 +1170,13 @@
        </div>
       </div>
       <div class="subitem_text">
-       <i class="fa fa-redo">
-       </i>
+       <img src="img/ui/refresh_icon.png" width="12" height="13" alt="refresh">
        <span>
         Yesterday, <strong>13:40</strong> PM
        </span>
       </div>
       <div class="subitem_search">
-       <i class="fas fa-search"></i>
+       <img class="item_image" src="img/ui/zoom_icon.png" width="12" height="12" alt="search_icon">
       </div>
      </div>
     </div> 
@@ -1235,11 +1196,10 @@
        </span>
       </div>
       <div class="item_search">
-       <i class="fas fa-search"></i>
+       <img class="item_image" src="img/ui/zoom_icon.png" width="12" height="12" alt="search_icon">
       </div>
       <div class="item_dropdown">
-       <i class="fa fa-angle-down">
-       </i>
+       <img class="item_image" src="img/ui/dropdown_arrow.png" width="10" height="6" alt="dropdown_icon">
       </div>
      </div>
 
@@ -1303,14 +1263,13 @@
       </div>
       </div>
       <div class="subitem_text">
-       <i class="fa fa-redo">
-       </i>
+       <img src="img/ui/refresh_icon.png" width="12" height="13" alt="refresh">
        <span>
         Today, <strong>13:40</strong> PM
        </span>
       </div>
       <div class="subitem_search">
-       <i class="fas fa-search"></i>
+       <img class="item_image" src="img/ui/zoom_icon.png" width="12" height="12" alt="search_icon">
       </div>
      </div>
 
@@ -1320,8 +1279,7 @@
      </span>
      <span class="subitem_message">
       <strong>Implementation in the Layout</strong>
-      <i class="fa fa-check">
-      </i>
+       <img src="img/ui/checked_icon.png" width="18" height="15" alt="checked">
      </span> 
      <div class="subitem_avatars">
       <div class="avatars_item">
@@ -1336,14 +1294,13 @@
        </div>
       </div>
       <div class="subitem_text">
-       <i class="fa fa-redo">
-       </i>
+       <img src="img/ui/refresh_icon.png" width="12" height="13" alt="refresh">
        <span>
         Yesterday, <strong>13:40</strong> PM
        </span>
       </div>
       <div class="subitem_search">
-       <i class="fas fa-search"></i>
+       <img class="item_image" src="img/ui/zoom_icon.png" width="12" height="12" alt="search_icon">
       </div>
      </div>
     </div> 
@@ -1364,11 +1321,10 @@
        </span>
       </div>
       <div class="item_search">
-       <i class="fas fa-search"></i>
+       <img class="item_image" src="img/ui/zoom_icon.png" width="12" height="12" alt="search_icon">
       </div>
       <div class="item_dropdown">
-       <i class="fa fa-angle-down">
-       </i>
+       <img class="item_image" src="img/ui/dropdown_arrow.png" width="10" height="6" alt="dropdown_icon">
       </div>
      </div>
 
@@ -1432,14 +1388,13 @@
       </div>
       </div>
       <div class="subitem_text">
-       <i class="fa fa-redo">
-       </i>
+       <img src="img/ui/refresh_icon.png" width="12" height="13" alt="refresh">
        <span>
         Today, <strong>13:40</strong> PM
        </span>
       </div>
       <div class="subitem_search">
-       <i class="fas fa-search"></i>
+       <img class="item_image" src="img/ui/zoom_icon.png" width="12" height="12" alt="search_icon">
       </div>
      </div>
 
@@ -1449,8 +1404,7 @@
      </span>
      <span class="subitem_message">
       <strong>Implementation in the Layout</strong>
-      <i class="fa fa-check">
-      </i>
+       <img src="img/ui/checked_icon.png" width="18" height="15" alt="checked">
      </span> 
      <div class="subitem_avatars">
       <div class="avatars_item">
@@ -1465,14 +1419,13 @@
        </div>
       </div>
       <div class="subitem_text">
-       <i class="fa fa-redo">
-       </i>
+       <img src="img/ui/refresh_icon.png" width="12" height="13" alt="refresh">
        <span>
         Yesterday, <strong>13:40</strong> PM
        </span>
       </div>
       <div class="subitem_search">
-       <i class="fas fa-search"></i>
+       <img class="item_image" src="img/ui/zoom_icon.png" width="12" height="12" alt="search_icon">
       </div>
      </div>
     </div> 
@@ -1512,7 +1465,7 @@
    </div>
    <div class="item_message">
     <span class="message_text">
-    <strong>Mark P.</strong> add an Image into Worlda
+    <strong>Marvin S.</strong> add an Image into Worlda
     </span>
     <span class="message_text date_text">
      Today, 10:30 PM
@@ -1527,7 +1480,7 @@
    </div>
    <div class="item_message">
     <span class="message_text">
-    <strong>Mark P.</strong> add an Image into Worlda
+    <strong>Sebastian K.</strong> add an Image into Worlda
     </span>
     <span class="message_text date_text">
      Today, 10:30 PM
@@ -1557,7 +1510,7 @@
    </div>
    <div class="item_message">
     <span class="message_text">
-    <strong>Mark P.</strong> add an Image into Worlda
+    <strong>Philip O.</strong> add an Image into Worlda
     </span>
     <span class="message_text date_text">
      Today, 10:30 PM
@@ -1587,7 +1540,7 @@
    </div>
    <div class="item_message">
     <span class="message_text">
-    <strong>Mark P.</strong> add an Image into Worlda
+    <strong>Benni I.</strong> add an Image into Worlda
     </span>
     <span class="message_text date_text">
      Today, 10:30 PM
@@ -1602,7 +1555,7 @@
    </div>
    <div class="item_message">
     <span class="message_text">
-    <strong>Mark P.</strong> add an Image into Worlda
+    <strong>Benni I.</strong> add an Image into Worlda
     </span>
     <span class="message_text date_text">
      Today, 10:30 PM
@@ -1617,7 +1570,7 @@
    </div>
    <div class="item_message">
     <span class="message_text">
-    <strong>Mark P.</strong> add an Image into Worlda
+    <strong>Benni I.</strong> add an Image into Worlda
     </span>
     <span class="message_text date_text">
      Today, 10:30 PM
@@ -1632,7 +1585,7 @@
    </div>
    <div class="item_message">
     <span class="message_text">
-    <strong>Mark P.</strong> add an Image into Worlda
+    <strong>Benni I.</strong> add an Image into Worlda
     </span>
     <span class="message_text date_text">
      Today, 10:30 PM
@@ -1662,8 +1615,6 @@
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
